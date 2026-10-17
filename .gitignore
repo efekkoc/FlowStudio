@@ -1,0 +1,72 @@
+# ==============================================================================
+# SENSITIVE CREDENTIALS & SECRETS (NEVER COMMIT)
+# ==============================================================================
+.env
+*.env
+client_secrets.json
+token.json
+credentials.json
+*.pem
+*.key
+
+# ==============================================================================
+# BROWSER PROFILES & AUTOMATION SESSIONS (Cookies, Google accounts)
+# ==============================================================================
+chrome_flow_profile/
+google_labs_profile/
+playwright-report/
+test-results/
+
+# ==============================================================================
+# COMPILED BUILDS & APPLICATION PACKAGES
+# ==============================================================================
+Flow Studio.app/
+build/
+dist/
+*.egg-info/
+
+# ==============================================================================
+# PYTHON & ENVIRONMENT
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+.Python
+
+# Streamlit Local Runtime
+.streamlit/credentials.toml
+
+# ==============================================================================
+# MEDIA GENERATION & TEST ARTIFACTS
+# ==============================================================================
+output/
+# Ignore root test videos
+/*.mp4
+/*.mov
+/*.avi
+
+# Ignore root debug screenshots (keep assets/ intact)
+/*.png
+/*.jpg
+/*.jpeg
+!AppIcon.icns
+
+# ==============================================================================
+# SYSTEM & IDE
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
